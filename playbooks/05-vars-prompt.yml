@@ -7,4 +7,4 @@
   tasks: 
    - name: Print URL
      debug:
-       msg: {{URL}}
+       msg: "{{URL}}"
