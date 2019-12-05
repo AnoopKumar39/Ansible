@@ -3,3 +3,12 @@
   tasks:
    - name: Ping command
      ping:
+
+
+- name: Play 2
+  hosts: all
+  tasks:
+    - name: Create an empty file
+      file:
+        path: /tmp/Anoop
+        state: touch
