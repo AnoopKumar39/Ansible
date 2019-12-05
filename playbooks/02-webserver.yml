@@ -6,9 +6,7 @@
       name: httpd
       state: present
 
-- name: Start httpd
-  hosts: all
-  tasks: 
-   service:
-    name: httpd
-    state: started
+   - name: Start httpd
+     service:
+      name: httpd
+      state: started
