@@ -1,0 +1,14 @@
+- name: Install httpd
+  hosts: all
+  tasks:
+   - name: Install httpd
+     package:
+      name: httpd
+      state: present
+
+- name: Start httpd
+  hosts: all
+  tasks: 
+   service:
+    name: httpd
+    state: started

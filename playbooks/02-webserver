@@ -1,7 +1,0 @@
-- name: Install httpd
-  hosts: all
-  tasks:
-   - name: Install httpd
-     package:
-      name: httpd
-      state: present
