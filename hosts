@@ -1,4 +1,4 @@
 node1.devops.int.
 #node2.devops.int.
 
-variable: host.google.com
+variable=host.google.com
