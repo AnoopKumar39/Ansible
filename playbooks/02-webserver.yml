@@ -10,8 +10,3 @@
      service:
       name: httpd
       state: started
-
-   - name: Stop htppd
-     service:
-      name: httpd
-      state: stopped
