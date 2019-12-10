@@ -1,0 +1,8 @@
+- name: Print variable from a file
+  hosts: all
+  vars_files:
+   - 01-vars.yml
+  tasks:
+   - name: Print variable
+     debug:
+       msg: "{{variable}}"
