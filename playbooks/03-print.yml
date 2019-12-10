@@ -10,5 +10,7 @@
   tasks: 
    - name: Get uptime
      shell: uptime
+     
+   - name: Print uptime  
      debug:
-       msg:{{uptime}}
+       msg: {{uptime}}
