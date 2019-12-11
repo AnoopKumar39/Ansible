@@ -4,3 +4,8 @@
    - name: Register variable
      shell: uptime
      register: me 
+
+   - name: Print me variable
+     debig:
+       msg: "{{me}}"
+       
