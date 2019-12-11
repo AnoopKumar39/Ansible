@@ -1,7 +1,7 @@
 - name: Checking variable precedence
   hosts: all
-  vars: 
-   URL: vars.from.play.com
+  #vars: 
+   #URL: vars.from.play.com
   tasks:
    - name: Print a variable from anywhere
      debug:
