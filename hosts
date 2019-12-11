@@ -1,4 +1,4 @@
-node1.devops.int. URL=vars.from.hosts.com
+node1.devops.int.
 #node2.devops.int.
 #[all:vars]
 #variable=host.google.com
