@@ -8,4 +8,4 @@
 
    - name: Print custom fact
      debug:
-       msg: "{{ansible_local}}"
+       msg: "{{ansible_local.demo.URL}}"
