@@ -6,6 +6,5 @@
      register: me 
 
    - name: Print me variable
-     debig:
+     debug:
        msg: "{{me}}"
-       
