@@ -1,6 +1,6 @@
 - name: Print gather facts variables
   hosts: all
-  gather_facts: no
+  #gather_facts: no
   tasks:
    - name: Print default facts
      debug:
