@@ -5,3 +5,7 @@
    - name: Print default facts
      debug:
        msg: "{{ansible_machine_id}}"
+
+   - name: Print custom fact
+     debug:
+       msg: "{{ansible_local}}"
