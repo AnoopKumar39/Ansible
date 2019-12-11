@@ -1,0 +1,7 @@
+- name: Print something using cli
+  hosts: all
+  tasks:
+   -name: Print from cli
+    debug: 
+      msg: variable
+      
