@@ -1,0 +1,6 @@
+- name: Print gather facts variables
+  hosts: all
+  tasks:
+   - name: Print default facts
+     debug:
+       msg: "{{public-hostname}}"
