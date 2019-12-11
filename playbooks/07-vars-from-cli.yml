@@ -4,4 +4,3 @@
    -name: Print from cli
     debug: 
       msg: variable
-      
