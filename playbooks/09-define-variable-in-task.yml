@@ -1,0 +1,14 @@
+- name: Defining a variable in task
+  hosts: all
+  tasks:
+   - name: Get uptime
+     shell: uptime
+     register: me
+
+   - name: Define a variable
+     set_fact:
+      uptime: "{{me.stdout}}"
+
+   - name: Print defined variable
+     debug:
+       msg: "{{uptime}}"
