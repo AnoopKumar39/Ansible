@@ -3,4 +3,4 @@
   tasks:
    - name: Print from cli
      debug: 
-       msg: variable
+       msg: {{variable}}
