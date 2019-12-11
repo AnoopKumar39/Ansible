@@ -6,6 +6,6 @@
    - name: Print a variable from anywhere
      debug:
        msg: "{{URL}}"
-     vars:
-      URL: vars.from.task.com
+     #vars:
+      #URL: vars.from.task.com
   
