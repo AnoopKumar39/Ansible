@@ -1,0 +1,11 @@
+- name: Checking variable precedence
+  hosts: all
+  var: 
+   URL: vars.from.play.com
+  tasks:
+   - name: Print a variable from anywhere
+     debug:
+       msg: "{{URL}}"
+     vars:
+      URL: vars.from.task.com
+  
