@@ -3,4 +3,4 @@
   tasks:
    - name: Print default facts
      debug:
-       msg: "{{public-hostname}}"
+       msg: "{{ansible_machine_id}}"
