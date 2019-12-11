@@ -1,0 +1,6 @@
+- name: Prnit variable from shell command
+  hosts: all
+  tasks:
+   - name: Register variable
+     shell: uptime
+     register: me 
