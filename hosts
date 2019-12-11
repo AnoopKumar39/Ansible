@@ -1,3 +1,4 @@
-node1.devops.int. variable=host.google.com
+node1.devops.int.
 #node2.devops.int.
-
+#[all:vars]
+#variable=host.google.com
