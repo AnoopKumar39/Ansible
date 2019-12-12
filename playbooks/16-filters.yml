@@ -7,9 +7,9 @@
 
    - name: Print load value
      set_fact:
-      #Load: "{{out.stdout.split()[-3].split('.')[0]}}"
-      Load: "6"
+      #LOAD: "{{out.stdout.split()[-3].split('.')[0]}}"
+      LOAD: "6"
 
    - name: Send email of load average 
      shell: curl -s --user 'api:a2ff99eb1378107de85386f630ce2077-5645b1f9-a580b529'  https://api.mailgun.net/v3/sandboxe53c4332ae8e49638e46147ca5f9c5d4.mailgun.org  -F from='LOAD AVERAGE NOTIFY<jenkins@devops.ml>'  -F to='Anoop <rickywilsoncentillionz@gmail.com>'  -F subject='LOAD AVERAGE - {{ansible_hostname}}'  -F text="Load Average is High on Server\n\n{{out.stdout}}\n\nRegards,\nAnsible Monitoring Team."
-     when: Load > "5"
+     when: LOAD > "5"
