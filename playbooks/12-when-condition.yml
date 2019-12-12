@@ -1,0 +1,5 @@
+- name: Execute a task with when codition
+  hosts: all
+  tasks:
+   - name: Check rpm command is there or not
+     shell: which rpm
