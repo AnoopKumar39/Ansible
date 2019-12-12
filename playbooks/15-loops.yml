@@ -8,3 +8,11 @@
       - Anoop
       - Kumar
       - Anoop Kumar
+   
+   - name: Have two lists as loop
+     debug: 
+       msg: "Hello {{item[0]}}, & Hello {{item[1]}}"
+     loop:
+      - ["One", "Two"]
+      - ["New", "Old"]
+      
