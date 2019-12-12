@@ -4,5 +4,3 @@
    - name: Check rpm command is there or not
      shell: which rpm
      when: ansible_distribution == "Ubuntu"
-
-   - name: 
