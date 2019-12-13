@@ -1,0 +1,3 @@
+- name: Say Hello From CentOS
+  debug:
+    msg: Hello World!
