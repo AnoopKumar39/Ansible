@@ -1,0 +1,4 @@
+- name: Print Hello from role
+  hosts: all
+  debug:
+    msg: Hello World!
