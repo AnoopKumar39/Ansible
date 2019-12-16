@@ -2,4 +2,3 @@
   package:
     name: httpd
     state: present
-  become: yes
