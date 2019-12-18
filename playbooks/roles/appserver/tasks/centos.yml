@@ -9,7 +9,7 @@
 
 - name: Download Tomcat
   unarchive:
-   src: "{{TOMACT_URL}}"
+   src: "{{TOMCAT_URL}}"
    dest: "{{APP_HOME}}"
    remote_src: yes 
   become_user: "{{APP_USER}}"
