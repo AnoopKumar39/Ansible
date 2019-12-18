@@ -19,4 +19,18 @@
    url: "{{WAR_URL}}"
    dest: "{{TOMCAT_HOME}}/webapps/student.war"
   become_user: "{{APP_USER}}"
-  
+
+- name: Download JDBC Jar File
+  get-url:
+   url: "{{JDBC_URL}}"
+   dest: "{{TOMCAT_HOME}}/lib/mysql-connector.jar"
+  become_user: "{{APP_USER}}"
+
+- name: Copy context.xml file
+  template:
+    src: context.xml.j2
+    dest: "{{TOMCAT_HOME}}/conf/context.xml"
+  become_user: "{{APP_USER}}"
+
+
+
