@@ -6,3 +6,10 @@
 - name: Create Application User
   user:
     name: "{{APP_USER}}"
+
+- name: Download Tomcat
+  unarchive:
+   src: "{{TOMACT_URL}}"
+   dest: "{{APP_HOME}}"
+   remote_src: yes 
+  become_user: "{{APP_USER}}"
