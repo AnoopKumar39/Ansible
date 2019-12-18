@@ -13,3 +13,10 @@
    dest: "{{APP_HOME}}"
    remote_src: yes 
   become_user: "{{APP_USER}}"
+
+- name: Download WAR File
+  get_url:
+   url: "{{WAR_URL}}"
+   dest: "{{TOMCAT_HOME}}/webapps/student.war"
+  become_user: "{{APP_USER}}"
+  
