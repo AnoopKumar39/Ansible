@@ -21,7 +21,7 @@
   become_user: "{{APP_USER}}"
 
 - name: Download JDBC Jar File
-  get-url:
+  get_url:
    url: "{{JDBC_URL}}"
    dest: "{{TOMCAT_HOME}}/lib/mysql-connector.jar"
   become_user: "{{APP_USER}}"
