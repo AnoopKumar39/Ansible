@@ -6,3 +6,4 @@
    - name: Print variable
      debug:
        msg: "{{variable}}"
+       
