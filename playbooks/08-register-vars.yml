@@ -8,3 +8,4 @@
    - name: Print me variable
      debug:
        msg: "{{me.stdout}}"
+       
