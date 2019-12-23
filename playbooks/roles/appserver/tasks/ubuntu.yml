@@ -39,9 +39,9 @@
   notify: Restart Tomcat
   
 - name: Download tomcat init script
-  get_url:
-   url: "{{TOMCAT_INIT_URL}}"
-   dest: /etc/init.d/tomcat
+  template:
+   src: tomcat.service
+   dest: /etc/systemd/system/tomcat.service
    mode: "0755"
   notify: Reload systemctl daemon
 
