@@ -1,4 +1,6 @@
-- name: Say Hello From Ubuntu
-  debug:
-    msg: Hey There!
-    
+- name: Install Apache2
+  apt:
+   name: apache2
+   state: present
+   update_cache: yes
+   
