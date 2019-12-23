@@ -1,9 +1,9 @@
-- name: Check Pre-reqs
+#- name: Check Pre-reqs
   include_role:
     name: pre-reqs
     tasks_from: check
 
-- name: Load CentOS Play
+#- name: Load CentOS Play
   include: centos.yml
   when: ansible_distribution == "CentOS"
 
