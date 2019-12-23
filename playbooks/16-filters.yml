@@ -18,4 +18,3 @@
                 -F subject='LOAD AVERAGE' \
                 -F text="Load Average is High on Server"
      when: LOAD > "5"
-
