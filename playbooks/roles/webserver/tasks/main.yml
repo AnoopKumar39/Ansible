@@ -8,6 +8,6 @@
   when: ansible_distribution == "CentOS"
 
 - name: Load Ubuntu Play
-  include: ubuntu.yml
-  when: ansible_distribution == "Ubuntu"
+   include: ubuntu.yml
+   when: ansible_distribution == "Ubuntu"
   
