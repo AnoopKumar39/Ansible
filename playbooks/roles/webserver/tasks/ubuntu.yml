@@ -3,6 +3,19 @@
    name: apache2
    state: present
    update_cache: yes
+  notify: Restart APACHE2
+
+- name: Install Reverse Proxy Modules
+  copy:
+   src: proxy-ubuntu.conf
+   dest: /etc/apache2/sites-available/000-default.conf
+  notify: Restart APACHE2
+
+- name: Download default index file 
+  get_url:
+    url: https://s3-us-west-2.amazonaws.com/studentapi-cit/index.html
+    dest: /var/www/html/index.html
+
 
 - name: Start Service 
   service:
