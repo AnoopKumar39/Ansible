@@ -1,2 +1,4 @@
 dependencies:
   - role: dep2
+    vars: 
+     URL: dep1.google.com
