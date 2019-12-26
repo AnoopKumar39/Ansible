@@ -1,0 +1,3 @@
+- name: This is dependncy role 1
+  debug: 
+    msg: Hello from dependency role 1
