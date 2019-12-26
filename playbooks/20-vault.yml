@@ -1,5 +1,6 @@
 - name: Demo on vault topic
   hosts: all
-  tasks: 
-   debug:
-     msg: Demo on vault protection
+  tasks:
+   - name: Nothing to print
+     debug:
+       msg: Demo on vault protection
