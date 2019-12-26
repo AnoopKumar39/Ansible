@@ -1,4 +1,4 @@
 - name: This is a test for dependency riles
   hosts: all
   roles: 
-   - dep2
+   - dep1
