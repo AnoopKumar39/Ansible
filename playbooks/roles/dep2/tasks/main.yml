@@ -1,3 +1,3 @@
-- name: This is dependncy role 2
+- name: This is from Dep2
   debug: 
-    msg: Hello from dependency role 2
+    msg: Hello from Dep2
