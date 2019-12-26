@@ -1,5 +1,5 @@
 - name: Demo on vault topic
   hosts: all
-  debug:
-    msg: Demo on vault protection
-    
+  tasks: 
+   debug:
+     msg: Demo on vault protection
