@@ -9,4 +9,3 @@
    - name: find kernel dpkg version
      shell: dpkg --list | grep kernel
      when: out.rc == 0
-   
