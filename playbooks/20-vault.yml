@@ -1,7 +1,7 @@
 - name: Demo on vault topic
   hosts: all
   vars:
-   pass: !vault |
+   PASS: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           64663036323335326431306436343261613132653264356334383234653733663137653664363938
           3137373866656535336230643331373939313863303935360a623262643735316230643635636564
@@ -11,4 +11,4 @@
   tasks:
    - name: Nothing to print
      debug:
-       msg: {{pass}}
+       msg: "{{PASS}}"
