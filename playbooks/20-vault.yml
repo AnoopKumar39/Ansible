@@ -11,4 +11,4 @@
   tasks:
    - name: Nothing to print
      debug:
-       msg: "{{pass}}"
+       msg: {{pass}}
