@@ -1,0 +1,16 @@
+- name: Printing Hello World!
+  hosts: all
+  tasks:
+   - name: Print Hello World!
+     debug:
+       msg: "Hey! How are you there?"
+
+- name: Get uptime
+  hosts: all
+  tasks: 
+   - name: Get uptime
+     shell: uptime
+     
+   - name: Print uptime  
+     debug:
+       msg: "{{uptime}}"
