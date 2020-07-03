@@ -11,6 +11,6 @@
    - name: Get uptime
      shell: uptime
      
-   - name: Print uptime  
-     debug:
-       msg: "{{uptime}}"
+##   - name: Print uptime  
+##     debug:
+##      msg: "{{uptime}}"
