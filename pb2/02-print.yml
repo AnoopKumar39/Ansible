@@ -16,4 +16,4 @@
   tasks:
     - name: uptime
       debug:
-        msg: {{uptime}}
+        msg: "{{uptime}}"
