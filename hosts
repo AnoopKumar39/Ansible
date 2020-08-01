@@ -5,3 +5,6 @@ node2.devops.int. ansible_user=ubuntu
 
 [centos]
 node1.devops.int. ansible_user=centos
+
+[ubuntu]
+node2.devops.int. ansible_user=ubuntu
