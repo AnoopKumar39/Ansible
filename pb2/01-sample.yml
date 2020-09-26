@@ -12,3 +12,11 @@
       file:
         path: /tmp/anoop
         state: touch
+
+##- name: Play 2
+##  hosts: all
+##  tasks:
+##    - name: Create an empty file
+##      file:
+##        path: /tmp/anoop
+##        state: touch
