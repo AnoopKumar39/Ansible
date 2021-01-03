@@ -1,11 +1,13 @@
-node1.devops.int. ansible_user=centos
-node2.devops.int. ansible_user=ubuntu
+##node1.devops.int. ansible_user=centos
+##node2.devops.int. ansible_user=ubuntu
 #[all:vars]
 #variable=host.google.com
 
-[centos]
-node1.devops.int. ansible_user=centos
+##[centos]
+##node1.devops.int. ansible_user=centos
 
-[ubuntu]
-node2.devops.int. ansible_user=ubuntu
+##[ubuntu]
+##node2.devops.int. ansible_user=ubuntu
 #variable=host.google.com
+
+localhost
