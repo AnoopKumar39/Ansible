@@ -4,8 +4,9 @@
   tasks:
    - name: Print default facts
      debug:
-       msg: "{{ansible_distribution}}"
-       msg: "{{ansible_architecture}}"
+       msg:
+       - "{{ansible_distribution}}"
+       - "{{ansible_architecture}}"
 #  - name: Print custom fact
 #    debug:
 #      msg: "{{ansible_local.demo.URL}}"
