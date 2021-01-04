@@ -5,8 +5,8 @@
    - name: Print default facts
      debug:
        msg: "{{ansible_distribution}}"
-
-   - name: Print custom fact
-     debug:
-       msg: "{{ansible_local.demo.URL}}"
+       msg: "{{ansible_distribution}}"
+#  - name: Print custom fact
+#    debug:
+#      msg: "{{ansible_local.demo.URL}}"
        
