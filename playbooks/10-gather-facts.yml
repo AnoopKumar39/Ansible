@@ -4,7 +4,7 @@
   tasks:
    - name: Print default facts
      debug:
-       msg: "{{ansible_machine_id}}"
+       msg: "{{ansible_distribution}}"
 
    - name: Print custom fact
      debug:
