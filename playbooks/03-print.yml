@@ -13,5 +13,5 @@
      
    - name: Print uptime  
      debug:
-       msg: "{{uptime}}"
+       msg: "{{ uptime }}"
        
